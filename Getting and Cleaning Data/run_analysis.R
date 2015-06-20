@@ -1,4 +1,4 @@
-setwd("~/data/UCI HAR Dataset/")
+#setwd("~/data/UCI HAR Dataset/")
 # read in all activities done while measuring
 activities <- read.table(file="activity_labels.txt", stringsAsFactors=FALSE)
 
