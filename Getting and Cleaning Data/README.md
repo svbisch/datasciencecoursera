@@ -6,9 +6,10 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 ## Steps taken to create the tidy data set
 
-To create the desired clean data set we first need to decide which features from the available 561 we want to retain. Since we're only
-interested in measurement on the mean and standard deviation we select all with the strings "mean(" or "std(" in their names. The names
-of these 66 selected features are not syntactically valid, so we delete all parentheses and substitute dashes by dots.
+To create the desired clean data set just execute the "run_analysis.R" script. In it we first need to decide which features from the available 561 we want to retain. Since we're only
+interested in measurement on the mean and standard deviation we select all with the strings "mean(" or "std(" in their names.
+Note, that not all features with "mean" in their name are selected, because they are no means in the strict sense (variables ending with "meanFreq" are weighted averages) or are angles (the last 7 features). 
+The names of these 66 selected features are not syntactically valid, so we delete all parentheses and substitute dashes with dots.
 
 In the next step we read in the training and test data separately and add columns for the subjects and actitivy, giving the activities proper
 names. We finally merge training and test data to obtain a data set with 10299 observations and 68 variables.
