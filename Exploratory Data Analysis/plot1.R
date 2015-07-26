@@ -14,5 +14,6 @@ with(q1,
           ylim=c(0, ceiling(max(pm25_tot_megatons)))
           )
      )
+# add linear regression line to display trend
 abline(lm(pm25_tot_megatons~year, q1), col="red")
 dev.off()
