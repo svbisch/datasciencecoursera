@@ -38,6 +38,6 @@ p7 <- ggplot(q7, aes(year,relchange)) +
     geom_point() +
     geom_line() + 
     facet_wrap(~county) +
-    labs(title="Relative Change in Motor Vehicles Emission") +
+    labs(title=expression("Relative Change in " * PM[2.5] * " Emission from Motor Vehicles")) +
     labs(y=expression("Relative Change in " * PM[2.5] * " Emission (1999=100)")) 
 ggsave("plot6.png")

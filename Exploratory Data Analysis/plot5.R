@@ -16,6 +16,6 @@ p5 <- ggplot(q5, aes(year, pm25_tot)) +
     geom_point() +
     geom_smooth(method="lm", se=FALSE) +
     labs(y=expression("Amount of " * PM[2.5] * " in tons")) +
-    labs(title="Motor Vehicles in Baltimore City")  +
+    labs(title=expression(PM[2.5] * " Emission from Motor Vehicles in Baltimore City"))  +
     ylim(0, ceiling(1.1 * max(q5$pm25_tot)))
 ggsave("plot5.png")

@@ -15,5 +15,5 @@ p3 <- ggplot(q3, aes(year, pm25_tot)) +
     geom_smooth(method="lm", se=FALSE) +
     facet_wrap(~type) +
     labs(y=expression("Amount of " * PM[2.5] * " in tons")) +
-    labs(title="Baltimore City") 
+    labs(title=expression("Baltimore City " * PM[2.5] * " Emission by type of source")) 
 ggsave("plot3.png")

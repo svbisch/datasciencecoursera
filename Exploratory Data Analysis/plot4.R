@@ -17,7 +17,7 @@ p4 <- ggplot(q4, aes(year, pm25_tot_kilotons)) +
     geom_point(size=3) +
     geom_smooth(method="lm", se=FALSE) +
     labs(y=expression("Amount of " * PM[2.5] * " in kilotons")) +
-    labs(title="Coal Combustion-Related Sources Across the U.S.") +
+    labs(title=expression(PM[2.5] * " Emission from Coal Combustion-Related Sources Across the U.S.")) +
     ylim(0, ceiling(1.1 * max(q4$pm25_tot_kilotons)))
 ggsave("plot4.png")
 
